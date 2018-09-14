@@ -6507,4 +6507,24 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
+.hero {
+  background-size: cover;
+  background-position: center center; }
+
+.evento {
+  opacity: 0;
+  animation-name: intro;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  transform-origin: center center;
+  animation-fill-mode: forwards; }
+
+@keyframes intro {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 /*# sourceMappingURL=main.css.map */

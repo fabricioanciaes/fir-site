@@ -24,7 +24,7 @@
   </nav>
 
 
-  <section class="section grey darken-3 hero" style="background-image:url('https://source.unsplash.com/1600x300/?architecture')">
+  <section class="section grey darken-3 hero" style="background-image:url('assets/img/hero.jpg')">
     <div class="container">
       <h1 class="h1" contenteditable="true">Lorem Ipsum</h1>
       <p class="flow-text" contenteditable="true">Dolor sit amet</p>
@@ -36,47 +36,25 @@
       <div class="row">
         <h4 class="center-align" contenteditable="true">Lorem ipsum</h4>
       </div>
-      <div class="row">
+      <div class="row" id="eventosArea">
+        <div class="progress">
+          <div class="indeterminate"></div>
 
-          <div class="col s12 m4">
+          <div class="col s12 m4 evento" style="animation-delay: ${0.1 * index}s">
             <div class="card">
               <div class="card-content white-text">
-                <span class="card-title black-text">Lorem Ipsum</span>
-                <p class="grey-text text-darken-1">Av. Visconde do Rio Branco, 243 - Centro, Niterói - RJ</p>
-                <h6 class="grey-text">03/06/2018 - 10h</h6>
+                <span class="card-title black-text">${data.nome}</span>
+                <p class="grey-text text-darken-1">${data.local}</p>
+                <h6 class="grey-text">${data.data}</h6>
               </div>
               <div class="card-action">
-                <a href="#">Ver Mais</a>
+                <a href="${data.url}">Ver Mais</a>
               </div>
             </div>
           </div>
 
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-content white-text">
-                <span class="card-title black-text">Lorem Ipsum</span>
-                <p class="grey-text text-darken-1">Av. Visconde do Rio Branco, 243 - Centro, Niterói - RJ</p>
-                <h6 class="grey-text">03/06/2018 - 10h</h6>
-              </div>
-              <div class="card-action">
-                <a href="#">Ver Mais</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-content white-text">
-                <span class="card-title black-text">Lorem Ipsum</span>
-                <p class="grey-text text-darken-1">Av. Visconde do Rio Branco, 243 - Centro, Niterói - RJ</p>
-                <h6 class="grey-text">03/06/2018 - 10h</h6>
-              </div>
-              <div class="card-action">
-                <a href="#">Ver Mais</a>
-              </div>
-            </div>
-          </div>
-        
+        </div>
+      </div>
     </div>
   </section>
 
@@ -124,7 +102,7 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="http://placehold.it/300x150">
+              <img src="assets/img/equipe.png">
               <span class="card-title" contenteditable="true">Card Title</span>
             </div>
             <div class="card-content">
@@ -137,7 +115,7 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="http://placehold.it/300x150">
+              <img src="assets/img/equipe.png">
               <span class="card-title" contenteditable="true">Card Title</span>
             </div>
             <div class="card-content">
@@ -150,7 +128,7 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="http://placehold.it/300x150">
+              <img src="assets/img/equipe.png">
               <span class="card-title" contenteditable="true">Card Title</span>
             </div>
             <div class="card-content">
@@ -163,7 +141,7 @@
         <div class="col s12 m4 offset-m2">
           <div class="card">
             <div class="card-image">
-              <img src="http://placehold.it/300x150">
+              <img src="assets/img/equipe.png">
               <span class="card-title" contenteditable="true">Card Title</span>
             </div>
             <div class="card-content">
@@ -176,7 +154,7 @@
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-              <img src="http://placehold.it/300x150">
+              <img src="assets/img/equipe.png">
               <span class="card-title" contenteditable="true">Card Title</span>
             </div>
             <div class="card-content">
@@ -216,6 +194,8 @@
   </footer>
   <!--JavaScript at end of body for optimized loading-->
   <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+  <script type="text/javascript" src="assets/js/vendors/tabletop/tabletop.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>
